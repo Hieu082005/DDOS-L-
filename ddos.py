@@ -677,7 +677,7 @@ class Spammer(threading.Thread):
         urllib.request.install_opener(opener) 
         req = urllib.request.Request(self.url, data, self.headers)
         urllib.request.urlopen(req)
-        sys.stdout.write("Thread #%4d | %4d\%d | duong@%s"%(self.num, N, len(self.lista), self.lista[N]))
+        sys.stdout.write("Thread #%4d | %4d\%d | hiếu lord@%s"%(self.num, N, len(self.lista), self.lista[N]))
     def run(self):
         global N
         self.Lock.acquire()
